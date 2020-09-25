@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="@dimen/_1sdp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/alarm"
+            android:padding="@dimen/_7sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+             />
+
+        <TextView
+            android:id="@+id/clearAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/clear"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/editColor"
+            />
+
+        <ImageView
+            android:id="@+id/addAlarm"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_7sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/add_alarn"
+            android:contentDescription="@string/app_name" />
+
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_transparent" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alarmRecylerView"
+        android:layout_below="@+id/actionBar"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/alarm_layout"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
