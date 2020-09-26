@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
 
         print("Hi Husnain")
         print("Master Branch")
+        print("Experiment")
+        print("Hi Husnain")
+        print("Hi Husnain")
+        print("Hi Husnain")
 
         alarmViewModel.alarms.observe(this , Observer {
 
