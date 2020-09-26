@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         alarmViewModel = ViewModelProvider(this , HelperClass(this).factory).get(AlarmViewModel::class.java)
 
         print("Hi Husnain")
-        print("Hi Husnain")
+        print("Experiment")
         print("Hi Husnain")
         print("Hi Husnain")
         print("Hi Husnain")
