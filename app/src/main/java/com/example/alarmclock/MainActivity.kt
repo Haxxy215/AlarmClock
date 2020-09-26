@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         alarmViewModel = ViewModelProvider(this , HelperClass(this).factory).get(AlarmViewModel::class.java)
 
         print("Hi Husnain")
+        print("Master Branch")
 
         alarmViewModel.alarms.observe(this , Observer {
 
